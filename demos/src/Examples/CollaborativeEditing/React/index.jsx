@@ -73,14 +73,10 @@ const ydoc = new Y.Doc()
 // })
 
 const getInitialUser = () => {
-  // return JSON.parse(localStorage.getItem('currentUser')) || {
-  //   name: getRandomName(),
-  //   color: getRandomColor(),
-  // }
-  return {
-    name: getRandomName(),
-    color: getRandomColor(),
-  }
+  return JSON.parse(localStorage.getItem('currentUser')) || {
+     name: getRandomName(),
+     color: getRandomColor(),
+   }
 }
 
 const docName = 'test999'
